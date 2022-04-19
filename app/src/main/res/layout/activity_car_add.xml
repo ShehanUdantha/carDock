@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="199dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/carapplogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextCarBrand"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Brand"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/editTextCarModel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Model"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarBrand"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarBrand"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarBrand" />
+
+            <EditText
+                android:id="@+id/editTextCarFuelType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Fuel Type"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarEngine"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarEngine"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarEngine" />
+
+            <EditText
+                android:id="@+id/editTextCarGear"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Transmission"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarFuelType"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarFuelType"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarFuelType" />
+
+
+            <EditText
+                android:id="@+id/editTextCarImgUrl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Img Url"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarDescription"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarDescription"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarDescription" />
+
+            <EditText
+                android:id="@+id/editTextCarManufactureYear"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Manufacture Year"
+                android:inputType="numberSigned"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarModel"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarModel"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarModel" />
+
+            <EditText
+                android:id="@+id/editTextCarEngine"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Car Engine (CC)"
+                android:inputType="numberSigned"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarManufactureYear"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarManufactureYear"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarManufactureYear" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Price (LKR)"
+                android:inputType="numberSigned"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextMileage"
+                app:layout_constraintStart_toStartOf="@+id/editTextMileage"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMileage" />
+
+            <EditText
+                android:id="@+id/editTextMileage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Mileage (km)"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextCarGear"
+                app:layout_constraintStart_toStartOf="@+id/editTextCarGear"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarGear" />
+
+
+            <EditText
+                android:id="@+id/editTextCarDescription"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Enter Options (Optional)"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextPrice"
+                app:layout_constraintStart_toStartOf="@+id/editTextPrice"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Submit"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCarImgUrl" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgCar"
+            android:layout_width="1200px"
+            android:layout_height="700px"
+            android:src="@mipmap/ic_launcher"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:text="Car Name"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carPriceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="fill_horizontal"
+                android:text="Price: Rs."
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="fill_horizontal"
+                android:text="Car Price"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carLocationView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Location: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Location"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carBrandView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout0"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Brand: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Brand"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carMOFView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car MOF: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carMOF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car MOF"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carEngineView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Engine (CC): "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Engine"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carFuelTypeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Fuel Type: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carFuelType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car FuelType"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carTransmissionView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Transmission: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carTransmission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Transmission"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carMileageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout5"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Mileage (km): "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carMileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Mileage"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carOptionsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout6"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Options: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Options"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout7"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Contact Details:"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carOwnerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Owner: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Owner"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carDateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout8"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Sale Date: "
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/carDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Car Sale Date"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout9"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:text="Call"></Button>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
